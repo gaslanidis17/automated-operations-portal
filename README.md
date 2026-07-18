@@ -12,6 +12,18 @@ I built this project through AI-assisted development using Claude and Claude Cod
 
 AI worked as a development multiplier, but I remained responsible for the requirements, decisions, review and final testing of the application.
 
+## Intended business impact
+
+This type of portal can reduce manual stakeholder updates, eliminate duplicate reporting files and provide a controlled source of truth for case visibility.
+
+The design is intended to improve:
+
+- stakeholder transparency;
+- consistency of operational records;
+- time spent answering status requests;
+- access control between different partner organisations;
+- auditability of case activity.
+
 ## Try it live
 
 **[Open the live demo](https://script.google.com/macros/s/AKfycbwSK9PBaw3DLnOlor96ypVvqmmHzVU_HGvUqyQGWZerXgIjTzcNsvBUtsu5YAnM0VEsIQ/exec)**
