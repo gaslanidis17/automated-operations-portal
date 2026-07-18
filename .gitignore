@@ -141,3 +141,10 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+
+# Google Apps Script and local operating-system files
+.clasp.json
+.clasprc.json
+.DS_Store
+Thumbs.db
