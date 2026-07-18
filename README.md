@@ -112,6 +112,27 @@ The setup creates four tabs:
 - `Stakeholders` — company mappings and access-code hashes.
 - `AuditLog` — append-only login and record-view events.
 
+## Populating the Sheet in a real setup
+
+If someone adapts this for their own company, I would not recommend maintaining the Sheet by hand. The cleaner setup is to keep the ticket platform—Jira, monday.com or whatever the team already uses—as the source of truth and populate `CourierActions` through an automated sync.
+
+```text
+Jira / monday.com / ticket platform
+                |
+                v
+official API, webhook or scheduled automation
+                |
+                v
+field mapping + validation + deduplication
+                |
+                v
+CourierActions sheet
+```
+
+The sync should use stable ticket IDs and upserts, so rerunning it updates existing rows instead of creating duplicates. It should also use a least-privilege integration account and export only the fields stakeholders are actually allowed to see.
+
+This repository does not include a production Jira or monday.com connector. Authentication, field mappings, retry handling, data retention and access rules need to be configured and reviewed by each organisation before real data is connected.
+
 ## A note on production use
 
 This is a portfolio prototype, not a claim that Sheets should replace a proper identity and data platform.
