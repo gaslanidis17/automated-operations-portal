@@ -6,6 +6,12 @@ The setup is pretty simple: a Sheet works as the database, each fleet gets its o
 
 > **Quick data disclaimer:** everything here is fake. Company names, courier IDs, tickets, actions, dates, markets, handler labels and notes are all fabricated for this portfolio project. There is no employer data, internal code, real operational information or confidential material in this repo.
 
+## Development approach
+
+I built this project through AI-assisted development using Claude and Claude Code agents in Cursor. I defined the business problem, user flow, application logic and validation criteria, then used the agents to accelerate implementation, debugging, testing and documentation.
+
+AI worked as a development multiplier, but I remained responsible for the requirements, decisions, review and final testing of the application.
+
 ## Try it live
 
 **[Open the live demo](https://script.google.com/macros/s/AKfycbwSK9PBaw3DLnOlor96ypVvqmmHzVU_HGvUqyQGWZerXgIjTzcNsvBUtsu5YAnM0VEsIQ/exec)**
