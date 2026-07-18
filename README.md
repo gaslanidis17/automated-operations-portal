@@ -20,24 +20,23 @@ You can also choose a demo account directly from the login page.
 
 ## Preview
 
-### Dashboard overview
+### Secure stakeholder login
 
-![Dashboard overview](screenshots/dashboard-overview.png)
+![Stakeholder login](screenshots/portal-login.png)
 
-The main dashboard brings together the annual budget, rewards paid, remaining budget, sustainability KPIs and recent trends in one view.
+Each stakeholder uses a fleet-specific access code. The account is read-only and linked to one fictional company on the server.
 
-### Fleet progress
+### Fleet-specific dashboard
 
-![Fleet progress](screenshots/fleet-progress.png)
+![Blue Harbor dashboard](screenshots/blue-harbor-dashboard.png)
 
-The fleet table shows current orders, adaptive targets, expected rewards, performance status and the invoice action for each fleet.
+The dashboard shows company-scoped records, summary metrics and filters for ticket status, termination outcome and date range.
 
-### Invoice workflow
+### Tenant separation
 
-![Invoice upload workflow](screenshots/invoice-upload-workflow.png)
+![Northstar dashboard](screenshots/northstar-dashboard.png)
 
-From the relevant fleet row, an employee can add the invoice period, amount, PDF and an optional note. In a normal internal setup, the file is stored in the correct fleet Drive folder and a Gmail draft is prepared for review.
-
+Logging in with a different stakeholder account returns a different set of records and summary metrics. The browser never chooses the company; the company is taken from the authenticated server-side session.
 ## Why I built it
 
 The idea came from a pretty common operations problem: the data already exists, but every stakeholder needs a different part of it.
